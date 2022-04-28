@@ -1,0 +1,157 @@
+/* ---- BODY ---- */
+
+body {
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 2%;
+}
+
+/* ---- HEADER ---- */
+
+#header {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to right,
+            rgb(29, 29, 29) 0%,
+            rgb(29, 29, 29) 70%,
+            rgb(182, 87, 32) 70%,
+            rgb(182, 87, 32) 100%)
+}
+
+#img {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    border: 1px solid antiquewhite;
+}
+
+#hello {
+    position: absolute;
+    left: 20%;
+    bottom: 85%;
+}
+
+#backgroundBorder {
+    position: absolute;
+    bottom: 35%;
+    right: 18%;
+    width: 365px;
+    height: 250px;
+    border: 1px solid antiquewhite;
+}
+
+#headerCode1 {
+    position: absolute;
+    bottom: 65%;
+    right: 37.5%;
+}
+
+#float1 {
+    position: absolute;
+    bottom: 46%;
+    left: 82%;
+}
+
+#float2 {
+    position: absolute;
+    bottom: 10%;
+    left: 70%;
+    transform: rotate(130deg);
+}
+
+#float3 {
+    position: absolute;
+    bottom: 5%;
+    left: 83%;
+}
+
+#float4 {
+    position: absolute;
+    bottom: 8%;
+    left: 55%;
+}
+
+#float5 {
+    position: absolute;
+    bottom: 80%;
+    left: 5%;
+}
+
+/* ---- TYPEWRITER EFFECT ---- */
+
+.let-highlight {
+    color: #C0AD60;
+}
+
+.string-highlight {
+    color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    margin-left: -200px;
+    font-family: "Courier New";
+    color:antiquewhite;
+}
+
+#typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ---- WHO AM I ---- */
+
+#aboutMe {
+    padding-top: 5%;
+}
+
+h3 {
+    color: rgb(182, 87, 32);
+}
+
+/* ---- MY WORK ---- */
+
+#myWorkImg {
+    border: 1px solid antiquewhite;
+}
+
+/* ---- GET IN TOUCH ---- */
+
+.icons {
+    font-size: 4rem;
+    padding-right: 5%;
+}
