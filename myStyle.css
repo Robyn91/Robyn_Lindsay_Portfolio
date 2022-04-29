@@ -355,10 +355,18 @@ h3 {
 }
 
 @media (max-width: 576px) {
+    #header {
+        background: linear-gradient(to right,
+                rgb(29, 29, 29) 0%,
+                rgb(29, 29, 29) 82%,
+                rgb(182, 87, 32) 82%,
+                rgb(182, 87, 32) 100%)
+    }
+
     #img {
         position: absolute;
         bottom: 46%;
-        right: 5%;
+        right: 1%;
         border: 1px solid antiquewhite;
     }
     
@@ -371,7 +379,7 @@ h3 {
     #backgroundBorder {
         position: absolute;
         bottom: 42%;
-        right: 12%;
+        right: 8%;
         width: 365px;
         height: 250px;
         border: 1px solid antiquewhite;
@@ -406,7 +414,7 @@ h3 {
 
     @keyframes x {
         100% {
-            transform: translateX(calc(70vw - 350px));
+            transform: translateX(calc(70vw - 300px));
         }
     }
     
