@@ -68,4 +68,6 @@ let typer = document.getElementById('typewriter');
 
 typewriter = setupTypewriter(typewriter);
 
-typewriter.type();
+$(document).ready(function () {
+    typewriter.type();
+  });
