@@ -91,9 +91,9 @@ body {
 #typewriter {
     font-size: 1.5em;
     position: absolute;
-    bottom: 10%;
+    bottom: 4%;
     left: 10%;
-    margin-left: -200px;
+    margin-left: -250px;
     font-family: "Courier New";
     color: antiquewhite;
 }
@@ -208,7 +208,7 @@ h3 {
 
 /* ---- Media Queries to adjust various items to screen size ---- */
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
     #img {
         position: absolute;
         bottom: 46%;
@@ -218,7 +218,7 @@ h3 {
     
     #hello {
         position: absolute;
-        left: 35%;
+        left: 20%;
         bottom: 89%;
     }
     
@@ -232,11 +232,20 @@ h3 {
     }
 
     #headerCode1,
-    #float1,
     #float2,
-    #float3,
-    #float4 {
+    #float4
+     {
         display: none;
+    }
+
+    #float1 {
+        bottom: 46%;
+        left: 88%; 
+    }
+
+    #float3 {
+        bottom: 5%;
+        left: 72%;
     }
     
     #float5 {
@@ -246,7 +255,8 @@ h3 {
     }
 
     #typewriter {
-        font-size: 1em;
+        font-size: 1.3em;
+        position: absolute;
         bottom: 0.5%;
         left: 1%;
         margin-left: -100px;
@@ -260,13 +270,13 @@ h3 {
 
     @keyframes x {
         100% {
-            transform: translateX(calc(70vw - 120px));
+            transform: translateX(calc(70vw - 350px));
         }
     }
     
     @keyframes y {
         100% {
-            transform: translateY(calc(70vh - 420px));
+            transform: translateY(calc(70vh - 480px));
         }
     }
 }
@@ -333,28 +343,28 @@ h3 {
 
     @keyframes x {
         100% {
-            transform: translateX(calc(40vw - 120px));
+            transform: translateX(calc(70vw - 450px));
         }
     }
     
     @keyframes y {
         100% {
-            transform: translateY(calc(70vh - 420px));
+            transform: translateY(calc(70vh - 480px));
         }
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     #img {
         position: absolute;
         bottom: 46%;
-        right: 15%;
+        right: 5%;
         border: 1px solid antiquewhite;
     }
     
     #hello {
         position: absolute;
-        left: 20%;
+        left: 35%;
         bottom: 89%;
     }
     
@@ -368,20 +378,11 @@ h3 {
     }
 
     #headerCode1,
+    #float1,
     #float2,
-    #float4
-     {
+    #float3,
+    #float4 {
         display: none;
-    }
-
-    #float1 {
-        bottom: 46%;
-        left: 88%; 
-    }
-
-    #float3 {
-        bottom: 5%;
-        left: 72%;
     }
     
     #float5 {
@@ -391,9 +392,8 @@ h3 {
     }
 
     #typewriter {
-        font-size: 1.3em;
-        position: absolute;
-        bottom: 0.5%;
+        font-size: 1em;
+        bottom: 5%;
         left: 1%;
         margin-left: -100px;
         font-family: "Courier New";
@@ -406,13 +406,13 @@ h3 {
 
     @keyframes x {
         100% {
-            transform: translateX(calc(40vw - 120px));
+            transform: translateX(calc(70vw - 350px));
         }
     }
     
     @keyframes y {
         100% {
-            transform: translateY(calc(70vh - 420px));
+            transform: translateY(calc(70vh - 490px));
         }
     }
 }
