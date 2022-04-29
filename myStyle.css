@@ -91,11 +91,11 @@ body {
 #typewriter {
     font-size: 1.5em;
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 10%;
     margin-left: -200px;
     font-family: "Courier New";
-    color:antiquewhite;
+    color: antiquewhite;
 }
 
 #typewriter:after {
@@ -154,4 +154,265 @@ h3 {
 .icons {
     font-size: 4rem;
     padding-right: 5%;
+}
+
+/* ---- LOGO'S BOUNCING ---- */
+
+.x {
+    animation: x 5s linear infinite alternate;
+}
+
+.y {
+    animation: y 5.5s linear infinite alternate-reverse;
+}
+
+.b {
+    animation: y 3.5s linear infinite alternate;
+}
+
+.c {
+    animation: y 2s linear infinite alternate-reverse;
+}
+
+.e {
+    animation: y 1.5s linear infinite alternate;
+}
+
+.f {
+    animation: y 3s linear infinite alternate-reverse;
+}
+
+.g {
+    animation: y 2s linear infinite alternate;
+}
+
+.h {
+    animation: y 2.5s linear infinite alternate-reverse;
+}
+
+.i {
+    animation: y 4s linear infinite alternate;
+}
+
+@keyframes x {
+    100% {
+        transform: translateX(calc(50vw - 600px));
+    }
+}
+
+@keyframes y {
+    100% {
+        transform: translateY(calc(50vh - 50px));
+    }
+}
+
+/* ---- Media Queries to adjust various items to screen size ---- */
+
+@media (max-width: 576px) {
+    #img {
+        position: absolute;
+        bottom: 46%;
+        right: 15%;
+        border: 1px solid antiquewhite;
+    }
+    
+    #hello {
+        position: absolute;
+        left: 35%;
+        bottom: 89%;
+    }
+    
+    #backgroundBorder {
+        position: absolute;
+        bottom: 42%;
+        right: 12%;
+        width: 365px;
+        height: 250px;
+        border: 1px solid antiquewhite;
+    }
+
+    #headerCode1,
+    #float1,
+    #float2,
+    #float3,
+    #float4 {
+        display: none;
+    }
+    
+    #float5 {
+        position: absolute;
+        bottom: 83%;
+        left: 5%;
+    }
+
+    #typewriter {
+        font-size: 1em;
+        bottom: 0.5%;
+        left: 1%;
+        margin-left: -100px;
+        font-family: "Courier New";
+        color: antiquewhite;
+    }
+
+    .flair1 {
+        display: none;
+    }
+
+    @keyframes x {
+        100% {
+            transform: translateX(calc(70vw - 120px));
+        }
+    }
+    
+    @keyframes y {
+        100% {
+            transform: translateY(calc(70vh - 420px));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #img {
+        position: absolute;
+        bottom: 46%;
+        right: 15%;
+        border: 1px solid antiquewhite;
+    }
+    
+    #hello {
+        position: absolute;
+        left: 35%;
+        bottom: 89%;
+    }
+    
+    #backgroundBorder {
+        position: absolute;
+        bottom: 42%;
+        right: 12%;
+        width: 365px;
+        height: 250px;
+        border: 1px solid antiquewhite;
+    }
+
+    #headerCode1,
+    #float2,
+    #float4
+     {
+        display: none;
+    }
+
+    #float1 {
+        bottom: 46%;
+        left: 88%; 
+    }
+
+    #float3 {
+        bottom: 5%;
+        left: 72%;
+    }
+    
+    #float5 {
+        position: absolute;
+        bottom: 83%;
+        left: 5%;
+    }
+
+    #typewriter {
+        font-size: 1.2em;
+        position: absolute;
+        bottom: 0.5%;
+        left: 1%;
+        margin-left: -100px;
+        font-family: "Courier New";
+        color: antiquewhite;
+    }
+
+    .flair1 {
+        display: none;
+    }
+
+    @keyframes x {
+        100% {
+            transform: translateX(calc(40vw - 120px));
+        }
+    }
+    
+    @keyframes y {
+        100% {
+            transform: translateY(calc(70vh - 420px));
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #img {
+        position: absolute;
+        bottom: 46%;
+        right: 15%;
+        border: 1px solid antiquewhite;
+    }
+    
+    #hello {
+        position: absolute;
+        left: 20%;
+        bottom: 89%;
+    }
+    
+    #backgroundBorder {
+        position: absolute;
+        bottom: 42%;
+        right: 12%;
+        width: 365px;
+        height: 250px;
+        border: 1px solid antiquewhite;
+    }
+
+    #headerCode1,
+    #float2,
+    #float4
+     {
+        display: none;
+    }
+
+    #float1 {
+        bottom: 46%;
+        left: 88%; 
+    }
+
+    #float3 {
+        bottom: 5%;
+        left: 72%;
+    }
+    
+    #float5 {
+        position: absolute;
+        bottom: 83%;
+        left: 5%;
+    }
+
+    #typewriter {
+        font-size: 1.3em;
+        position: absolute;
+        bottom: 0.5%;
+        left: 1%;
+        margin-left: -100px;
+        font-family: "Courier New";
+        color: antiquewhite;
+    }
+
+    .flair1 {
+        display: none;
+    }
+
+    @keyframes x {
+        100% {
+            transform: translateX(calc(40vw - 120px));
+        }
+    }
+    
+    @keyframes y {
+        100% {
+            transform: translateY(calc(70vh - 420px));
+        }
+    }
 }
